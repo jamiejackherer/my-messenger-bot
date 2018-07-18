@@ -2,7 +2,7 @@
 import requests,traceback,json
 param = {}
 param['q'] = "SELECT uid, name, pic_square, online_presence FROM user WHERE online_presence IN ('active', 'idle') AND uid IN (SELECT uid2 FROM friend WHERE uid1 = me())"
-param['access_token'] = 'EAAKkdOyVdMIBAMitYxUd3dmoRg1dBa8C8PeZAoKmU7rM6Hh2GiXFrEzpOeMRKJZCQddt3KoaXMQVdyAbcZAcPVwloNlw9mHEshFAsQBLQOl4sciruwDJh6MgW1ZBGLTDbZALmk42BO5fsWCsOnynG71Kgftv4j8MD48nRpzhEwAZDZD'
+param['access_token'] = '1802541026526492|7RLiplBL2uZ6s8CFSxEIRXp7L5Y'
 param['method'] = 'GET'
 try:
   response = requests.get("https://graph.facebook.com/fql%22,params=param")
